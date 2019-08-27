@@ -5,7 +5,7 @@ import App from './components/App';
 import store from './store';
 
 render(
-  <Provider sore={store}>
+  <Provider store={store}>
     <App />,
   </Provider>,
   document.getElementById('root')
