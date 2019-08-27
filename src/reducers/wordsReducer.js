@@ -1,7 +1,7 @@
-import { LOAD_WORDS } from '';
-import Dictionary from '../fixtures/words.json';
+import { LOAD_WORDS } from '../actions/wordsActions';
+import dictionary from '../fixtures/words.json';
 
-export default function reducer(state = { Dictionary }, action) {
+export default function reducer(state = { dictionary }, action) {
   switch(action.type) {
     case LOAD_WORDS:
       return [...state, action.payload];
